@@ -13,5 +13,4 @@ function inicio(frase) {
 
 function nuevaVentana(){
     window.open(document.write(5+1));
-    
 };
