@@ -11,26 +11,28 @@
 </head>
 
 <body>
-    <div class="row-cols-1 mt-3 ">
+    <div class="row mt-3">
         <div class="col bg-secondary text-light">
             <p class="display-1 text-center">IMC</p>
             <form>
                 <div class="mb-3 mt-3">
-                    <label class="form-label" for="num1">Peso</label>
+                    <label for="peso">Peso</label>
                     <input class="form-control" step="any" type="number" id="peso" name="peso"
-                        placeholder="Introduce tu peso" required></input>
+                        placeholder="Introduce tu peso en kg" required></input>
                 </div>
                 <div class="mb-3 mt-3">
-                    <label class="form-label" for="num2">Altura</label>
+                    <label  for="peso">Altura</label>
                     <input class="form-control" step="any" type="number" id="altura" name="altura"
-                        placeholder="Introduce tu altura" required></input>
-                
+                        placeholder="Introduce tu altura en metros" required></input>
+                </div>
                 <div class="mb-3 mt-3">
                     <button type="button" onclick="calculaIMC()" class="btn btn-light">Enviar</button>
                 </div>
-                <p class="display-1 text-center">Tu IMC es de:</p>
-                <p class="display-1 text-center" id="IMC"></p>
             </form>
+        </div>
+        <div class="col bg-body-tertiary text-dark-emphasis">
+            <p class="display-1 text-center">Tu IMC es de:</p>
+            <p class="display-1 text-center" id="IMC"></p>
         </div>
     </div>
 </body>
