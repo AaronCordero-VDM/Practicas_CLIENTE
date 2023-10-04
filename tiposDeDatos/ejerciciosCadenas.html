@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ejercicios de Caracteres
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/ejerciciosCadenas.js"></script>
+
+</head>
+
+<body>
+    <div class="row mt-3">
+        <div class="col"></div>
+        <div class="col bg-secondary text-light">
+
+            <p class="display-6 text-center">Cadenas</p>
+            <form>
+                <div class="mb-3 mt-3">
+                    <label class="form-label" for="texto">Texto</label>
+                    <input class="form-control" type="texto" name="dato" id="texto"
+                        value="ABCD EFGH IJKL"><br />
+                    <label class="form-label" for="palabra">Palabra</label>
+                    <input class="form-control" type="palabra" name="palabra" id="palabra"
+                        value="IJKL"><br />
+                    <label class="form-label" for="letra">letra</label>
+                    <input class="form-control" type="letra" name="letra" id="letra"
+                        value="A"><br />
+                </div>
+                <div class="mb-3 mt-3" style="display: flex; flex-wrap: wrap;">
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="separarEnLineas()" class="btn btn-light">Separar en lineas</button>
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="contarLetras()" class="btn btn-light">Contar solo las letras</button>
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="darVuelta()" class="btn btn-light">Dar la vuelta</button>
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="buscarPalabra()" class="btn btn-light">Buscar palabra</button>
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="buscarLetra()" class="btn btn-light">Buscar letra</button>
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="buscarVocales()" class="btn btn-light">Buscar vocales</button>
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="dividirPalabras()" class="btn btn-light">Dividir la palabra</button>
+                    <button style="margin: 5px; min-width: 250px;" type="button" onclick="darVueltaPalabras()" class="btn btn-light">Dar la vuelta a las palabras</button>
+                </div>
+            </form>
+            <div class="mb-3 mt-3">
+                <p class="display-6 text-center">Resultado</p>
+                <div class="text-center" id="salida"></div>
+                <p class="display-6 text-center" id="salida1"></p>
+            </div>
+        </div>
+        
+        <div class="col">
+        </div>
+    </div>
+</body>
+
+</html>
