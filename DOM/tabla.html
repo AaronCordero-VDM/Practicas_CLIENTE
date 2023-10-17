@@ -7,6 +7,20 @@
     <script type="text/javascript" src="js/tabla.js"></script>
 </head>
 <body>
-    
+    <form>
+        <label for="filas">Numero de filas</label>
+        <input type="number" class="filas" id="filas" name="filas" value="2">
+        <br/>
+        <label for="columnas">Numero de columnas</label>
+        <input type="number" class="columnas" id="columnas" name="columnas" value="2">
+        <br/>
+        <button type="button" onclick=crearTabla() class="boton">Crear</button>
+        <br/>
+        <input type="checkbox" id="borde">
+        <label for="borde">Borde</label>
+        <br/>
+        <label for="color">Color</label>
+        <input type="number" class="color" id="color" name="color">
+    </form>
 </body>
 </html>

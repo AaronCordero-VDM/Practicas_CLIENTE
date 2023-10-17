@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#botonera{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.boton {
+    font-size: 20px;
+    flex-grow: 1;
+    flex-basis: 100;
+    margin: 0.2em 1em;
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+#imagen{
+    margin-top: 5%;
+    width: 100%;
+}
+
+#palabraOculta{
+    font-size: 8em;
+    letter-spacing: 10px;
+}
