@@ -11,12 +11,12 @@
 }
 
 .boton {
-    font-size: 20px;
+    font-size: 15px;
     flex-grow: 1;
     flex-basis: 100;
     margin: 0.2em 1em;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: blanchedalmond;
     border-radius: 10px;
 }
@@ -27,6 +27,14 @@
 }
 
 #palabraOculta{
-    font-size: 8em;
+    font-size: 4em;
     letter-spacing: 10px;
+}
+
+#nuevoJuego{
+    margin-top: 50px;
+}
+
+#final{
+    font-size: 20px;
 }
