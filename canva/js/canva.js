@@ -8,7 +8,7 @@ let posX;
 let posY;
 let partidaAcabada = false;
 let contJugadas = 0;
-const juego = {
+let juego = {
     board:[
     [0,0,0],
     [0,0,0],
@@ -99,8 +99,9 @@ function verTurno(){
 function comprobarGanador(){
     for (let i= 0; i<3;i++){
         if((juego.board[i][0] != 0 && juego.board[i][0] == juego.board[i][1] && juego.board[i][0] == juego.board[i][2] && juego.board[i][2] == 1) ||
+          (juego.board[0][i] != 0 && juego.board[0][i] == juego.board[1][i] && juego.board[0][i] == juego.board[2][i] && juego.board[2][i] == 1) ||
           (juego.board[0][0] !== 0 && juego.board[0][0] === juego.board[1][1] && juego.board[0][0] === juego.board[2][2] && juego.board[0][0] ==1) ||
-          (juego.board[0][2] !== 0 && juego.board[0][2] === juego.board[1][1] && juego.board[0][2] === juego.board[2][0] && juego.board[0][0] ==1) 
+          (juego.board[0][2] !== 0 && juego.board[0][2] === juego.board[1][1] && juego.board[0][2] === juego.board[2][0] && juego.board[0][2] ==1) 
           ) {
             document.getElementById("texto").innerHTML = "Gana el jugador 1";
             partidaAcabada = true;
@@ -108,8 +109,9 @@ function comprobarGanador(){
 
 
         if((juego.board[i][0] != 0 && juego.board[i][0] == juego.board[i][1] && juego.board[i][0] == juego.board[i][2] && juego.board[i][2] == 2) ||
+        (juego.board[0][i] != 0 && juego.board[0][i] == juego.board[1][i] && juego.board[0][i] == juego.board[2][i] && juego.board[2][i] == 2) ||
         (juego.board[0][0] !== 0 && juego.board[0][0] === juego.board[1][1] && juego.board[0][0] === juego.board[2][2] && juego.board[0][0] ==2) ||
-        (juego.board[0][2] !== 0 && juego.board[0][2] === juego.board[1][1] && juego.board[0][2] === juego.board[2][0] && juego.board[0][0] ==2) 
+        (juego.board[0][2] !== 0 && juego.board[0][2] === juego.board[1][1] && juego.board[1][1] === juego.board[2][0] && juego.board[0][2] ==2) 
         ){
             document.getElementById("texto").innerHTML = "Gana el jugador 2";
             partidaAcabada = true;
@@ -121,6 +123,9 @@ function comprobarGanador(){
     }
 }
 
+function reiniciar(){
+    location.reload();
+}
     
 
 
