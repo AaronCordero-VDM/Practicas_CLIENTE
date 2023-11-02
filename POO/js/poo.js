@@ -17,5 +17,5 @@ persona.nombre = "El Fede";
 console.log(persona.nombre);
 
 
-persona.apodo = "Fer"
+persona.apodo = "Fer";
 console.log(persona.apodo)
