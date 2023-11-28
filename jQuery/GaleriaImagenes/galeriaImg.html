@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica1</title>
+    <style>
+        .imagen {
+            width: 400px;
+            height: 200px;
+            border: 2px solid green;
+            margin: 10px;
+        }
+
+        .bot {
+            float: rigth;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid-item{
+            display: inline;
+            align-items: center;
+            justify-content: center;
+        }
+        .borrar{
+            margin-left: 10px;
+            width: 400px;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="text" placeholder="Introduce la url" id="contenido">
+        <button id="añadir">Añadir imagen</button>
+    </header>
+    <div class="grid-container">
+        
+    </div>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="galeriaImg.js"></script>
+</body>
+
+</html>
