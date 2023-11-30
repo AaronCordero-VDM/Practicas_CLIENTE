@@ -1,0 +1,23 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.estiloTarjeta{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgb(215, 182, 247);
+}
+
+.grid-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+}
