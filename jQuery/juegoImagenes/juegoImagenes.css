@@ -1,3 +1,7 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body{
     box-sizing: border-box;
     display: flex;
@@ -7,11 +11,9 @@ body{
     overflow: hidden;
 }
 .estiloTarjeta{
-    border: 1px solid black;
     width: 200px;
     height: 200px;
-    border-radius: 5px;
-    background-color: blueviolet;
+    border-radius: 10px;
 }
 
 .grid-container{
@@ -21,6 +23,74 @@ body{
     grid-gap: 40px;
 }
 
-.comprobacion{
-    background-color: blueviolet;
+.item{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    background-color: #fff;
+    transition: 0.7s;
+    cursor: pointer;    
+    border-radius: 10px;
+}
+
+
+
+.item:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(img/fondo.jpg);
+    transition: 0.6s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.item.tarjetaClick{
+    transform: rotateY(0deg);
+}
+
+.tarjetaClick:after, .match:after{
+    transform: rotateY(180deg);
+}
+
+.salida{
+    font-size: 55px;
+    color: #fff;
+}
+
+#reset{
+    font-size: 2.5em;
+    background-color: #6b12d1d5;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    color: #fff;
+}
+
+#tablero{
+    margin: 2em;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    width: 1300px;
+    height: 750px;
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
