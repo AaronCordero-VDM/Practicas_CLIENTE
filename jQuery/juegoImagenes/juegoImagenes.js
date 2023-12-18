@@ -41,7 +41,7 @@ function inicializar(){
                     $tarjetasClick.removeClass("tarjetaClick");
                     // Si ya hemos acertado todas las parejas
                     if ($(".match").length == parejas.length){
-                        $(".salida").html("<p>FIN GANASTE!</p><br>")
+                        // $(".salida").html("<p>FIN GANASTE!</p><br>")
                     }
                 }
                 // Si no coinciden las tarjetas clickadas directamente 

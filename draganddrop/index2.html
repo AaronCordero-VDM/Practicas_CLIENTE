@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de ordenar</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="example-parent">
+        <div class="row">
+            <h2 class="salida">Ordena los numeros</h2>
+        </div>
+        <div class="row">
+            <div class="example-origin" id="origen">
+                <div id="1" class="example-draggable" draggable="true" ondragstart="arrastrar(event)"
+                    ondragend="drop(event)">
+                    <img src="img/3.jpg" alt="3">
+                </div>
+            </div>
+            <div class="example-origin" id="origen">
+                <div id="2" class="example-draggable" draggable="true" ondragstart="arrastrar(event)"
+                    ondragend="drop(event)">
+                    <img src="img/1.jpg" alt="1">
+                </div>
+            </div>
+            <div class="example-origin" id="origen">
+                <div id="3" class="example-draggable" draggable="true" ondragstart="arrastrar(event)"
+                    ondragend="drop(event)">
+                    <img src="img/6.jpg" alt="6">
+                </div>
+            </div>
+            <div class="example-origin" id="origen">
+                <div id="4" class="example-draggable" draggable="true" ondragstart="arrastrar(event)"
+                    ondragend="drop(event)">
+                    <img src="img/4.jpg" alt="4">
+                </div>
+            </div>
+            <div class="example-origin" id="origen">
+                <div id="5" class="example-draggable" draggable="true" ondragstart="arrastrar(event)"
+                    ondragend="drop(event)">
+                    <img src="img/7.jpg" alt="7">
+                </div>
+            </div>
+            <div class="example-origin" id="origen">
+                <div id="6" class="example-draggable" draggable="true" ondragstart="arrastrar(event)"
+                    ondragend="drop(event)">
+                    <img src="img/2.jpg" alt="2">
+                </div>
+            </div>
+            <div class="example-origin" id="origen">
+                <div id="7" class="example-draggable" draggable="true" ondragstart="arrastrar(event)"
+                    ondragend="drop(event)">
+                    <img src="img/9.jpg" alt="9">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="destinos">
+            <div id="destino1" ondragover="recibir(event)" class="example-dropzone" ondrop="soltar(event)">
+                Suelta
+            </div>
+            <div id="destino2" ondragover="recibir(event)" class="example-dropzone" ondrop="soltar(event)">
+                Suelta
+            </div>
+            <div id="destino2" ondragover="recibir(event)" class="example-dropzone" ondrop="soltar(event)">
+                Suelta
+            </div>
+            <div id="destino2" ondragover="recibir(event)" class="example-dropzone" ondrop="soltar(event)">
+                Suelta
+            </div>
+            <div id="destino2" ondragover="recibir(event)" class="example-dropzone" ondrop="soltar(event)">
+                Suelta
+            </div>
+            <div id="destino2" ondragover="recibir(event)" class="example-dropzone" ondrop="soltar(event)">
+                Suelta
+            </div>
+            <div id="destino2" ondragover="recibir(event)" class="example-dropzone" ondrop="soltar(event)">
+                Suelta
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" onclick="comprobar()">Comprobar</button>
+        </div>
+    </div>
+</body>
+
+</html>

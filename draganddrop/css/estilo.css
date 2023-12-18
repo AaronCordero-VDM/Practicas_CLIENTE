@@ -1,0 +1,54 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.example-parent {
+    border: 2px solid black;
+    color: black;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .example-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .example-draggable {
+    background-color: #DFA612;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 30px;
+  }
+  
+  .example-dropzone {
+    background-color: coral;
+    padding: 50px;
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  button{
+    font-size: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+  }
+
+  .lleno{
+    pointer-events: none;
+  }
