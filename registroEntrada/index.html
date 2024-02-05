@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contro de visitas</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="head">Control de visitas</div>
+    <hr>
+    <div id="cont">
+        <div id="col1">
+            <h2>Registro</h2>
+            <form>
+                Nombre:
+                <br>
+                <input type="text" id="nombre">
+                <br>
+                Apellidos:
+                <br>
+                <input type="text" id="apellidos">
+                <br>
+                DNI:
+                <br>
+                <input type="text" name="dni" id="dni">
+                <br>
+                Persona de Contacto:
+                <br>
+                <input type="text" id="perCon">
+                <br>
+                <input type="button" id="registrar" value="Registrar" onclick="guardarBD()">
+                <input type="button" id="limpiar" value="Limpiar" onclick="clean()">
+            </form>
+        </div>
+        
+        <div id="col2">
+            <h2>Entradas</h2>
+            <form>
+                Buscar por DNI:
+                <input type="text" id="dniFilt" maxlength="9">
+                <input type="button" value="Buscar" onclick="buscarEnt(campo='dni')">
+                <br>
+                Buscar por apellidos:
+                <input type="text" id="apellFilt">
+                <input type="button" value="Buscar" onclick="buscarEnt(campo='apell')">
+                <br>
+            </form>
+            <table border="1px solid black" style="border-collapse: collapse;" id="tablaEntrada">
+                <tr>
+                    <th>Nom</th>
+                    <th>Apell</th>
+                    <th>DNI</th>
+                    <th>Contact</th>
+                    <th>F.Entrada</th>
+                    <th>Salir</th>
+                </tr>
+                <tbody id="tablaBodyEnt">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="col3">
+            <h2>Salidas</h2>
+            <form
+            >
+                Buscar por DNI:
+                <input type="text" id="nombre" maxlength="9">
+                <input type="button" value="Buscar" onclick="">
+                <br>
+                Buscar por apellidos:
+                <input type="text" id="apellidos">
+                <input type="button" value="Buscar" onclick="">
+                <br>
+            </form>
+            <table border="1px solid black" style="border-collapse: collapse;">
+                <tr>
+                    <th>Nom</th>
+                    <th>Apell</th>
+                    <th>DNI</th>
+                    <th>Contact</th>
+                    <th>F.Entrada</th>
+                    <th>F.Salida</th>
+                </tr>
+                <tbody id="tablaBodySal">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -81,11 +81,9 @@ body{
     justify-content: center;
     align-items: center ;
     flex-direction: column;
-    width: 1300px;
+    width: 1100px;
     height: 750px;
-    background-image: url(img/back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:rgb(87, 86, 199);
     border-radius: 10px;
 }
 

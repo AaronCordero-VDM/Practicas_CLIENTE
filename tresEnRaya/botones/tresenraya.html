@@ -25,13 +25,13 @@
         <div class="col-6 text-center">
             <div class="row align-content-center mt-3">
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,0)"></button>
+                    <button class="boton btn btn-outline-success" id="boton0" onclick="jugar(this,0)"></button>
                 </div>
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,1)"></button>
+                    <button class="boton btn btn-outline-success" id="boton1" onclick="jugar(this,1)"></button>
                 </div>
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,2)"></button>
+                    <button class="boton btn btn-outline-success" id="boton2" onclick="jugar(this,2)"></button>
                 </div>
             </div>
         </div>
@@ -44,13 +44,13 @@
         <div class="col-6 text-center">
             <div class="row align-content-center mt-3">
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,3)"></button>
+                    <button class="boton btn btn-outline-success" id="boton3" onclick="jugar(this,3)"></button>
                 </div>
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,4)"></button>
+                    <button class="boton btn btn-outline-success" id="boton4" onclick="jugar(this,4)"></button>
                 </div>
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,5)"></button>
+                    <button class="boton btn btn-outline-success" id="boton5" onclick="jugar(this,5)"></button>
                 </div>
             </div>
         </div>
@@ -63,13 +63,13 @@
         <div class="col-6 text-center">
             <div class="row align-content-center mt-3 mb-3">
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,6)"></button>
+                    <button class="boton btn btn-outline-success" id="boton6" onclick="jugar(this,6)"></button>
                 </div>
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,7)"></button>
+                    <button class="boton btn btn-outline-success" id="boton7" onclick="jugar(this,7)"></button>
                 </div>
                 <div class="col-auto">
-                    <button class="boton btn btn-outline-success" onclick="jugar(this,8)"></button>
+                    <button class="boton btn btn-outline-success" id="boton8" onclick="jugar(this,8)"></button>
                 </div>
             </div>
         </div>
@@ -81,7 +81,9 @@
         </div>
         <div class="col-6 text-center">
             <p class="display-1" id="salida"></p>
+        <button class="btn btn-success" id="atras" onclick="retroceder()">Retroceder</button>
         <button class="btn btn-success" onclick="reiniciar()">Reiniciar</button>
+        <button class="btn btn-success" id="siguiente" onclick="avanzar()">Avanzar</button>
         </div>
     </div>
         <div class="col-3">

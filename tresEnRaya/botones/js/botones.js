@@ -2,6 +2,7 @@
 // turno -> int
 // numero de fichas -> int
 
+
 let juego = {
     tablero: ["","","","","","","","",""],
     turno:1,
@@ -9,14 +10,16 @@ let juego = {
     partidaFinalizada: false,
 }
 
+document.addEventListener("DOMContentLoaded", pintarLocal);
+
 function jugar(bot,pos){
     juego.numFich ++;
     if (juego.turno == 1){
         bot.innerHTML = "X";
-        juego.tablero[pos] = "X"
+        juego.tablero[pos] = "X";
     }else{
         bot.innerHTML = "O";
-        juego.tablero[pos] = "O"
+        juego.tablero[pos] = "O";
     }
     bot.disabled = true;
 
@@ -37,6 +40,27 @@ function jugar(bot,pos){
             juego.turno = 1;
         }
     }
+
+    localStorage.setItem("miJuego", JSON.stringify(juego));
+}
+
+function pintarLocal(){
+    if(localStorage.getItem("miJuego")){
+        juego = JSON.parse(localStorage.getItem("miJuego"))
+        for(let j = 0; j < juego.tablero.length; j++){
+            console.log("boton"+j)
+            console.log(juego.tablero[j])
+            let boton = document.getElementById("boton"+j)
+            boton.innerHTML = juego.tablero[j];
+        }
+    }else{
+        let juego = {
+            tablero: ["","","","","","","","",""],
+            turno:1,
+            numFich:0,
+            partidaFinalizada: false,
+        }
+    }
 }
 
 function hayGanador(){
@@ -51,14 +75,22 @@ function hayGanador(){
         return true;    
 }
 
+function retroceder(){
+}
+
+function avanzar(){
+
+}
+
 function reiniciar(){
     juego.tablero = ["","","","","","","","",""];
     juego.turno = 1;
     juego.numFich = 0;
     document.getElementById("salida").innerHTML = ""
-    document.querySelectorAll(".boton").forEach(b => {
+    document.querySelectorAll("#boton").forEach(b => {
         juego.partidaFinalizada = false;
         b.innerHTML = "";
         b.disabled = false;
-    })
+    });
+    localStorage.clear();
 }
